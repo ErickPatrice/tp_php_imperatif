@@ -3,6 +3,29 @@
 
 // ... (autres fonctions existantes) ...
 
+// voir la liste des membres
+function getAllMembers() {
+    $members = array();
+    $file = 'data/members.csv';
+
+    if (file_exists($file)) {
+        $handle = fopen($file, 'r');
+        if ($handle) {
+            while (($line = fgetcsv($handle)) !== false) {
+                $members[] = array(
+                    'nom' => $line[0],
+                    'prenom' => $line[1],
+                    'email' => $line[2],
+                    'password' => $line[3]
+                );
+            }
+            fclose($handle);
+        }
+    }
+
+    return $members;
+}
+
 // Ajouter un membre
 function addMember($nom, $prenom, $email, $password) {
     $members = getAllMembers();
@@ -50,6 +73,18 @@ function updateMember($email, $newNom, $newPrenom) {
     return false;
 }
 
+// Enregistrer la liste des membres dans le fichier CSV
+function saveMembersToFile($members) {
+    $file = 'data/members.csv';
+    $handle = fopen($file, 'w');
+    
+    if ($handle) {
+        foreach ($members as $member) {
+            fputcsv($handle, array($member['nom'], $member['prenom'], $member['email'], $member['password']));
+        }
+        fclose($handle);
+    }
+}
 
 ?>
 
