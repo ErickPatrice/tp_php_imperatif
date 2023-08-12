@@ -1,0 +1,28 @@
+/* Styles pour le header */
+header {
+    background-color: #393434;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Styles pour le footer */
+footer {
+    background-color: #393434;
+    color: #fff;
+    
+     
+}
+
+.footer-text {
+    text-align: center;
+    margin: 0;
+}
+
+/* Autres styles */
+/* ... Ajoutez ici d'autres styles spécifiques à votre application ... */

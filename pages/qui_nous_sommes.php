@@ -16,6 +16,10 @@
         <main>
             <h1>Qui Nous Sommes</h1>
             <p>Nous sommes une association dédiée à...</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum corrupti odit nisi deserunt temporibus, culpa accusantium saepe necessitatibus, quis quaerat veniam impedit labore eaque enim, illo ea incidunt distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum corrupti odit nisi deserunt temporibus, culpa accusantium saepe necessitatibus, quis quaerat veniam impedit labore eaque enim, illo ea incidunt distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum corrupti odit nisi deserunt temporibus, culpa accusantium saepe necessitatibus, quis quaerat veniam impedit labore eaque enim, illo ea incidunt distinctio.</p>
+    
         </main>
 
         <footer>

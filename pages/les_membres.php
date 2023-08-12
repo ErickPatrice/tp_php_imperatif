@@ -102,10 +102,6 @@
     ?>
 </main>
 
-<!-- ... (fin du fichier) ... -->
-
-
-
         <footer>
             <?php include 'templates/footer.php'; ?>
         </footer>

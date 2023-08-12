@@ -17,6 +17,11 @@
             <h1>Accueil</h1>
             <p>Bienvenue sur le site de notre association.</p>
         </main>
+        <article>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum corrupti odit nisi deserunt temporibus, culpa accusantium saepe necessitatibus, quis quaerat veniam impedit labore eaque enim, illo ea incidunt distinctio.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi illum corrupti odit nisi deserunt temporibus, culpa accusantium saepe necessitatibus, quis quaerat veniam impedit labore eaque enim, illo ea incidunt distinctio.</p>
+
+        </article>
 
         <footer>
             <?php include 'templates/footer.php'; ?>

@@ -1,6 +1,6 @@
 <header>
     <div class="container">
-        <h1 class="header-logo">Mon Association</h1>
+        <h1 class="header-logo">La Belle Affaire</h1>
         <nav>
             <ul class="nav">
                 <li class="nav-item"><a class="nav-link" href="index.php?page=accueil">Accueil</a></li>

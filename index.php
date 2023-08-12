@@ -7,12 +7,12 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Association</title>
+    <title>La Belle Affaire</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
-    <?php include 'includes/header.php'; ?>
+    
 
     <?php
     // Routeur
@@ -20,26 +20,26 @@ session_start();
         $page = $_GET['page'];
         switch ($page) {
             case 'accueil':
-                include 'accueil.php';
+                include 'pages/accueil.php';
                 break;
             case 'qui_nous_sommes':
-                include 'qui_nous_sommes.php';
+                include 'pages/qui_nous_sommes.php';
                 break;
             case 'les_membres':
-                include 'les_membres.php';
+                include 'pages/les_membres.php';
                 break;
             case 'admin':
-                include 'admin.php';
+                include 'pages/admin.php';
                 break;
             default:
-                include 'accueil.php';
+                include 'pages/accueil.php';
                 break;
         }
     } else {
-        include 'accueil.php';
+        include 'pages/accueil.php';
     }
     ?>
 
-    <?php include 'includes/footer.php'; ?>
+     
 </body>
 </html>
