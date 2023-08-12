@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <?php include 'templates/header.php'; ?>
+            <?php include '../templates/header.php'; ?>
         </header>
 
          <!-- ... (début du fichier) ... -->
@@ -26,7 +26,7 @@
         // Vérifier les informations d'authentification de l'administrateur
         if ($username === "admin" && $password === "admin") {
             $_SESSION["admin_authenticated"] = true;
-            header("Location: admin.php");
+            header("Location: pages/admin.php");
             exit();
         } else {
             echo "<p class='text-danger'>Identifiants incorrects. Veuillez réessayer.</p>";
@@ -50,7 +50,7 @@
 
 
         <footer>
-            <?php include 'templates/footer.php'; ?>
+            <?php include '../templates/footer.php'; ?>
         </footer>
     </div>
 </body>

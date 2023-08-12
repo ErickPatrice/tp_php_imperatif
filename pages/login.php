@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <header>
-            <?php include 'templates/header.php'; ?>
+            <?php include '../templates/header.php'; ?>
         </header>
 
 <main>
@@ -48,7 +48,7 @@
 
 
         <footer>
-            <?php include 'templates/footer.php'; ?>
+            <?php include '../templates/footer.php'; ?>
         </footer>
     </div>
 </body>

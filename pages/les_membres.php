@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,7 +10,10 @@
 <body>
     <div class="container">
         <header>
-            <?php include 'templates/header.php'; ?>
+            <?php include '../templates/header.php'; ?>
+            <?php include '../includes/functions.php'; ?>
+            <?php include '../includes/auth.php';  ?>
+
         </header>
 
          <!-- ... (début du fichier) ... -->
@@ -21,7 +24,7 @@
     <?php
     // Vérifier si l'administrateur est authentifié
     if (!isAdminAuthenticated()) {
-        header("Location: admin_login.php");
+        header("Location: login.php");
         exit();
     }
 
@@ -103,7 +106,7 @@
 </main>
 
         <footer>
-            <?php include 'templates/footer.php'; ?>
+            <?php include '../templates/footer.php'; ?>
         </footer>
     </div>
 </body>
