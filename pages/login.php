@@ -11,6 +11,8 @@
     <div class="container">
         <header>
             <?php include 'templates/header.php'; ?>
+            <?php include 'includes/auth.php'; ?>
+            <?php include 'includes/functions.php'; ?>
         </header>
 
 <main>
