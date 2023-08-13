@@ -4,34 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <header>
             <?php include '../templates/header.php'; ?>
+            <?php include '../includes/auth.php' ; ?>
         </header>
 
 <main>
     <h1>Connexion</h1>
     <?php
     // Vérifier si le formulaire a été soumis
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $email = $_POST["email"];
         $password = $_POST["password"];
 
         // Vérifier les informations d'authentification
-        if (authenticateMember($email, $password)) {
+        $authenticated = authenticateMember($email, $password);
+        if ($authenticated) {
             $_SESSION["member_authenticated"] = true;
-            header("Location: les_membres.php");
+            header("Location: /pages/les_membres.php");
             exit();
         } else {
             echo "<p class='text-danger'>Identifiants incorrects. Veuillez réessayer.</p>";
         }
     }
     ?>
-    <form method="post">
+    <form method="post" action="login.php">
         <div class="mb-3">
             <label for="email" class="form-label">Adresse Email</label>
             <input type="email" class="form-control" id="email" name="email" required>
